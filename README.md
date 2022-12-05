@@ -5,7 +5,7 @@
 - Current age: 19
 - Birth year: January 22,2003
 - 👀 I’m interested in website and graphic design,basketball and novels
-- 🌱 I’m currently learning Javascript,C++,HTML and CSS.
+- 🌱 I’m currently learning Javascript,C++,HTML and CSS. I also want to start learning python as well
 - 💞️ I’m looking to collaborate on Website and graphic designs.
 - 📫 How to reach me 
 - Email: mimidoochen2003@gmail.com
