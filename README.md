@@ -1,4 +1,9 @@
 - 👋 Hi, I’m @MimidooCh4n
+-  Name : Mimidoo Sarah Chen
+-  University : Cyprus International University
+- Course of sudy : Information technology
+- Current age: 19
+- Birth year: January 22,2003
 - 👀 I’m interested in website and graphic design,basketball and novels
 - 🌱 I’m currently learning Javascript,C++,HTML and CSS.
 - 💞️ I’m looking to collaborate on Website and graphic designs.
