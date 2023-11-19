@@ -2,7 +2,7 @@
 -  Name : Mimidoo Sarah Chen
 -  University : Cyprus International University
 - Course of sudy : Information technology
-- Current age: 19
+- Current age: 20
 - Birth year: January 22,2003
 - 👀 I’m interested in website and graphic design,basketball and novels
 - 🌱 I’m currently learning Javascript,C++,HTML and CSS. I also want to start learning python as well
