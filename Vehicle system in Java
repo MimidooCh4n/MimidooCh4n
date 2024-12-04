@@ -1,0 +1,78 @@
+public interface Vehicle {
+void start();
+void stop();
+void displayInfo();
+}
+public class Main {
+	public static void main(String[] args) {
+		Vehicle car = new carClass("Toyota Camry", 2023);
+       Vehicle motorcycle = new motorcycleClass("Honda CBR1000RR", 2011);
+       Vehicle truck = new truckClass("Ford",2019);
+       car.start();
+       car.displayInfo();
+       car.stop();
+       motorcycle.start();
+       motorcycle.displayInfo();
+       motorcycle.stop();
+       truck.start();
+       truck.displayInfo();
+       truck.stop();
+	}
+}
+public class carClass implements Vehicle {
+	String ModelName;
+	int yearOfCar;
+	
+public carClass(String ModelName, int yearOfCar) {
+	this.ModelName = ModelName;
+	this.yearOfCar = yearOfCar;
+}
+public void stop() {
+	System.out.println("Car has stopped");
+}
+public void start() {
+	System.out.println("Car has started");
+}
+public void displayInfo() {
+	System.out.println("Model of Car: " + ModelName);
+	System.out.println("Year of Car: " + yearOfCar);
+}
+ }
+public class motorcycleClass implements Vehicle {
+	String ModelName;
+	int yearOfMotorcycle;
+	
+public motorcycleClass(String ModelName, int yearOfMotorcycle) {
+	this.ModelName = ModelName;
+	this.yearOfMotorcycle = yearOfMotorcycle;
+}
+public void start() {
+	System.out.println("Motorcycle has started");
+}
+public void stop() {
+	System.out.println("Motorcycle has stopped");
+}
+public void displayInfo() {
+	System.out.println("Model of Motorcycle: " + ModelName);
+	System.out.println("Year of Motorcycle: " + yearOfMotorcycle);
+}
+ }
+public class truckClass implements Vehicle {
+	String ModelName;
+	int yearOfTruck;
+	
+public truckClass(String ModelName, int yearOfTruck) {
+	this.ModelName = ModelName;
+	this.yearOfTruck = yearOfTruck;
+}
+public void start() {
+	System.out.println("Truck has started");
+}
+public void stop() {
+	System.out.println("Truck has stopped");
+}
+public void displayInfo() {
+	System.out.println("Model of Truck: " + ModelName);
+	System.out.println("Year of Truck: " + yearOfTruck);
+}
+ }
