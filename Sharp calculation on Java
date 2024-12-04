@@ -1,0 +1,146 @@
+public abstract class AbstractShape implements Shape {
+	public abstract double calculateArea();
+	public abstract void displayInfo();
+}
+public class Circle extends AbstractShape {
+	double a;
+	public Circle(double a) {
+		this.a=a;
+	}
+	@Override
+	public double calculateArea() {
+		
+		return Math.PI * a;
+	}
+	@Override
+	public void displayInfo() {
+		System.out.println("The area of the circle is "+ calculateArea());
+		
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           Circle c = new Circle(4);
+           Rectangle r = new Rectangle(4, 6);
+           Triangle  t = new Triangle(4, 18, 32);
+          
+         
+           c.displayInfo();
+           r.displayInfo();
+           t.displayInfo();
+	}
+}
+public class Rectangle extends AbstractShape {
+	double a, b;
+	public Rectangle(double a, double b) {
+		this.a=a;
+		this.b=b;
+	}
+	@Override
+	public double calculateArea() {
+		
+		return  a*b;
+	}
+	@Override
+	public void displayInfo() {
+		System.out.println("The area of the rectangle is "+ calculateArea());
+		
+	}
+}
+public interface Shape {
+  double calculateArea();
+  void displayInfo();
+}
+public class Triangle extends AbstractShape {
+	double a, b ,c;
+	public Triangle(double a, double b, double c) {
+		this.a=a;
+		this.b=b;
+		this.c=c;
+	}
+	@Override
+	public double calculateArea() {
+		
+		return  a*b*c;
+	}
+	@Override
+	public void displayInfo() {
+		System.out.println("The area of the triangle is "+ calculateArea());
+		
+	}
+}
+
+public abstract class AbstractShape implements Shape {
+	public abstract double calculateArea();
+	public abstract void displayInfo();
+}
+public class Circle extends AbstractShape {
+	double a;
+	public Circle(double a) {
+		this.a=a;
+	}
+	@Override
+	public double calculateArea() {
+		
+		return Math.PI * a;
+	}
+	@Override
+	public void displayInfo() {
+		System.out.println("The area of the circle is "+ calculateArea());
+		
+	}
+}
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           Circle c = new Circle(4);
+           Rectangle r = new Rectangle(4, 6);
+           Triangle  t = new Triangle(4, 18, 32);
+          
+         
+           c.displayInfo();
+           r.displayInfo();
+           t.displayInfo();
+	}
+}
+public class Rectangle extends AbstractShape {
+	double a, b;
+	public Rectangle(double a, double b) {
+		this.a=a;
+		this.b=b;
+	}
+	@Override
+	public double calculateArea() {
+		
+		return  a*b;
+	}
+	@Override
+	public void displayInfo() {
+		System.out.println("The area of the rectangle is "+ calculateArea());
+		
+	}
+}
+public interface Shape {
+  double calculateArea();
+  void displayInfo();
+}
+public class Triangle extends AbstractShape {
+	double a, b ,c;
+	public Triangle(double a, double b, double c) {
+		this.a=a;
+		this.b=b;
+		this.c=c;
+	}
+	@Override
+	public double calculateArea() {
+		
+		return  a*b*c;
+	}
+	@Override
+	public void displayInfo() {
+		System.out.println("The area of the triangle is "+ calculateArea());
+		
+	}
+}
+
