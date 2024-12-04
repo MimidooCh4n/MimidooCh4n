@@ -1,0 +1,83 @@
+public abstract class AbstractEmployee {
+protected int empID;
+protected String name;
+protected double basicSalary;
+public AbstractEmployee(int empID, String name, double basicSalary) {
+	 this.empID = empID;
+	 this.name = name;
+	 this.basicSalary = basicSalary;
+}
+public void displayInfo() {
+	 System.out.println("Employee ID: " + empID);
+	 System.out.println("Employee Name: " + name);
+	 System.out.println("Employee salary: " + basicSalary);
+	
+}
+}
+public class Developer extends AbstractEmployee  {
+private double projectAllowance;
+public Developer(int empID, String name, double basicSalary, double bonus) {
+	super(empID, name, basicSalary);
+	this.projectAllowance = projectAllowance;
+	
+}
+public double calculateSalary() {
+	return basicSalary + projectAllowance;
+}
+public void displayInfo() {
+	super.displayInfo();
+	System.out.println("Position : Manager");
+	System.out.println("Bonus: " + projectAllowance);
+	System.out.println("Total salary: " + calculateSalary());
+}
+}
+public class Developer extends AbstractEmployee  {
+private double projectAllowance;
+public Developer(int empID, String name, double basicSalary, double bonus) {
+	super(empID, name, basicSalary);
+	this.projectAllowance = projectAllowance;
+	
+}
+public double calculateSalary() {
+	return basicSalary + projectAllowance;
+}
+public void displayInfo() {
+	super.displayInfo();
+	System.out.println("Position : Manager");
+	System.out.println("Bonus: " + projectAllowance);
+	System.out.println("Total salary: " + calculateSalary());
+}
+}
+public interface Employee {
+public double calculateSalary();
+public void displayInfo();
+}
+public class EmployeeRank {
+	public static void main(String[] args) {
+		Manager manager = new Manager (1 , "Erica Ikya" , 8000.0, 2600.0);
+		Developer developer = new Developer(2, "Mimidoo Chen", 6000.0, 1600.0);
+		
+		System.out.println("Manager Information :");
+		manager.displayInfo();
+		
+		System.out.println("\nDeveloper Information :");
+		developer.displayInfo();
+	}
+}
+public class Manager extends AbstractEmployee  {
+private double bonus;
+public Manager(int empID, String name, double basicSalary, double bonus) {
+	super(empID, name, basicSalary);
+	this.bonus = bonus;
+	
+}
+public double calculateSalary() {
+	return basicSalary + bonus;
+}
+public void displayInfo() {
+	super.displayInfo();
+	System.out.println("Position : Manager");
+	System.out.println("Bonus: " + bonus);
+	System.out.println("Total salary: " + calculateSalary());
+}
+}
